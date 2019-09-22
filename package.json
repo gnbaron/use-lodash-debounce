@@ -5,6 +5,13 @@
   "author": "gnbaron",
   "license": "MIT",
   "repository": "gnbaron/use-lodash-debounce",
+  "keywords": [
+    "react",
+    "debounce",
+    "lodash",
+    "hooks",
+    "react-hooks"
+  ],
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
