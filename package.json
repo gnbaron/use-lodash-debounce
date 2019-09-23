@@ -1,6 +1,6 @@
 {
   "name": "use-lodash-debounce",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Custom react hooks for lodash debounce.",
   "author": "gnbaron",
   "license": "MIT",
