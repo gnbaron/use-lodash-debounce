@@ -18,7 +18,7 @@ export function useDebounce<T>(
   value: T,
   delay: number = 0,
   options?: DebounceSettings
-): [T] {
+): T {
   const previousValue = useRef(value)
   const [current, setCurrent] = useState(value)
   const debouncedCallback = useDebouncedCallback(
@@ -36,5 +36,5 @@ export function useDebounce<T>(
     }
   }, [value])
 
-  return [current]
+  return current
 }

@@ -8,16 +8,16 @@ test('debounce a simple value', async () => {
     ({ value }) => useDebounce(value, DELAY),
     { initialProps: { value: null } }
   )
-  expect(result.current).toEqual([null])
+  expect(result.current).toEqual(null)
   rerender({ value: 1 })
   rerender({ value: 2 })
   rerender({ value: 3 })
-  expect(result.current).toEqual([null])
+  expect(result.current).toEqual(null)
   await waitForNextUpdate()
   rerender({ value: 4 })
-  expect(result.current).toEqual([3])
+  expect(result.current).toEqual(3)
   await waitForNextUpdate()
-  expect(result.current).toEqual([4])
+  expect(result.current).toEqual(4)
 })
 
 test('debounce a callback', done => {
