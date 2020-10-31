@@ -27,7 +27,7 @@ export function useDebounce<T>(
     options
   )
   useEffect(() => {
-    // does trigger the debounce timer initially
+    // doesn't trigger the debounce timer initially
     if (value !== previousValue.current) {
       debouncedCallback(value)
       previousValue.current = value
